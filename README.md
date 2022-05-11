@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Sidehustle Capstone 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# side Hustle Second Capstone Project Reactjs Track Group 40
 
-In the project directory, you can run:
+Clone the project to your local to begin working on it or you can fork the repo to your github account and make changes there.
+# Please endeavour to create a new branch while making changes and push your code to that branch then make a pull request to the stage branch. Your code will be reviewed and added to stage for testing and integration if it has no bugs and any conflicts have been resolved then it will be merged to master.
 
-### `npm start`
+Check Issues section to see todos and features to work on and indicate that you want to implement that issue.
+# You can work on as many issues/features as you want, Pull requests will be merged on a rolling basis of first commit, first review. Thank you!!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# CapStone Project Overview
 
-### `npm test`
+Expected features:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+    1. An admin login page -> just email and password login.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    2. Home - the root page with some static analytics data, graphs etc 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+(gain some design inspiration
 
-### `npm run eject`
+https://dribbble.com/shots/14472838-Blueberry-CRM-Dashboard-Template-Interaction, 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+https://dribbble.com/shots/16395772-Olaya-Finance-Dashboard, 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://dribbble.com/shots/15172061-Dribbble-Pro-Dashboard-UI-Concept )
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   3.  Team members - a table showing the various members of the company, their 
 
-## Learn More
+    Full name, 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    email, 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    phone number, 
 
-### Code Splitting
+    gender, 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    image. 
 
-### Analyzing the Bundle Size
+(use this api ->  https://fakerapi.it/api/v1/persons?_quantity=10 )
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+    4. Clients - a table that displays the customers of the businessâ€¦
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+	Full name, 
 
-### Advanced Configuration
+    Full name, 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    email, 
 
-### Deployment
+    phone number, 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    gender, 
 
-### `npm run build` fails to minify
+    image. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+	(use this api -> https://fakerapi.it/api/v1/companies?_quantity=1)
+
+5. A product page that displays all the products of the company.
+
+
+6.  Logout - a user can logout of this dashboard. This takes them back to the login page.
