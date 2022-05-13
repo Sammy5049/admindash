@@ -1,0 +1,150 @@
+import { Container } from "react-bootstrap";
+import { Routes, Route, Navigate, useLocation, Link, useHistory } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Clients from "../components/Dashboard/Clients/clients";
+import Notes from "../components/Dashboard/Notes/notes";
+import Products from "../components/Dashboard/Products/products";
+import TeamMembers from "../components/Dashboard/TeamMembers/teamMembers";
+import profile from "../assets/svg/sidebar/profile.svg";
+import logout from "../assets/svg/sidebar/logout.svg";
+import menu from "../assets/svg/menu.svg";
+
+
+function Dashboard() {
+    const location = useLocation().pathname;
+    const [path, setPath] = useState("");
+
+    const openNav = () => {
+        document.getElementById("sidebar").style.left = "0px";
+    }
+
+    const closeNav = () => {
+        document.getElementById("sidebar").style.left = "-300px";
+    }
+
+    const changePathAndClose = (path) => {
+        if (window.innerWidth <= 992) {
+            closeNav()
+        }
+        setPath(path);
+
+    }
+
+
+
+    useEffect(() => {
+        setPath(location);
+
+    }, [location])
+
+    let userDetails = JSON.parse(sessionStorage.getItem("userDetails"))
+
+    return (
+        <div className="dashboard">
+            <div className="dashboard_sidebar hide-scrollBar" id="sidebar">
+                <img src={profile} alt="cancel" className="dashboard_sidebar-cancel" onClick={closeNav} />
+                <h3> Welcome {userDetails.name} </h3>
+
+                <div className="dashboard_sidebar-main"></div>
+
+                <Link className="link-decor" to="/ notes">
+                    <div
+                        className={path.includes("notes") || path === "notes"
+                            ? "dashboard_sidebar-items active"
+                            : "dashboard_sidebar-items"}
+                        onClick={() => changePathAndClose("notes")}
+                    >
+                        <img src={profile} alt="icon" />
+                        <p> NOTES </p>
+                    </div>
+                </Link>
+                <Link className="link-decor" to="/clients">
+                    <div
+                        className={path.includes("clients") || path === "clients"
+                            ? "dashboard_sidebar-items active"
+                            : "dashboard_sidebar-items"}
+                        onClick={() => changePathAndClose("clients")}
+                    >
+                        <img src={profile} alt="icon" />
+                        <p> Clients</p>
+                    </div>
+                </Link>
+                <Link to="/products" className="link-decor">
+                    <div
+                        className={path.includes("products") || path === "products"
+                            ? "dashboard_sidebar-items active"
+                            : "dashboard_sidebar-items"}
+                        onClick={() => changePathAndClose("products")}
+                    >
+                        <img src={profile} alt="icon" />
+                        <p>Products</p>
+                    </div>
+                </Link>
+                <Link className="link-decor" to="/teamMembers">
+                    <div
+                        className={path.includes("teamMembers") || path === "teamMembers"
+                            ? "dashboard_sidebar-items active"
+                            : "dashboard_sidebar-items"}
+                        onClick={() => changePathAndClose("teamMembers")}
+                    >
+                        <img src={profile} alt="icon" />
+                        <p>Team Members</p>
+                    </div>
+                </Link>
+
+                <hr />
+
+
+                <div className="dashboard_sidebar-items logout" //onClick={logOut}
+                >
+
+
+                    <img src={logout} alt="icon" />
+                    <p> Sign out</p>
+                </div>
+
+            </div>
+            <div className="dashboard_main">
+                <Container>
+                    <div className="dashboard_main-nav">
+                        <img src={menu} alt="menu" className="dashboard_main-nav-menu"
+                            onClick={() => openNav()} />
+                        <h4
+                            //onClick={goToBoard} 
+                            style={{ cursor: "pointer" }}>
+                            {
+                                path.includes("notes") ? "Your  Notes"
+                                    : path.includes("clients") ? "Clients"
+                                        : path.includes("products") ? "Products"
+                                            : path.includes("teamMembers") ? "teamMembers"
+
+                                                : path.includes("apis") ? "APIs"
+                                                    : "Your Notes"
+                            }
+
+                        </h4>
+
+
+                    </div>
+
+
+
+                </Container>
+                <div>
+                    <Routes>
+                        <Route path="/" element={<Navigate to="/home" />} />
+                        <Route path="/notes" element={<Notes />} />
+                        <Route path="/clients" element={<Clients />} />
+                        <Route path="/products/*" element={<Products />} />
+                        <Route path="/teamMembers/*" element={<TeamMembers />} />
+
+
+                    </Routes>
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
+export default Dashboard;
