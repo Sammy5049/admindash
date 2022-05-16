@@ -20,7 +20,11 @@ const Home = () => {
                     <p> Libraree is a platform where you get access to quality books online,
                         join a community of online readers, get the latest information on new books of interest.</p>
 
-                    <Link to="/signup"> <button> Get started for free</button> </Link>
+                    <Link to="/Signup"> <button> Get started for free</button> </Link>
+                    <p>Alreadly have an account?, Sign in</p>
+                   <Link to="/Signin"> <button> Sign in</button> </Link>
+
+                    
 
                 </div>
 

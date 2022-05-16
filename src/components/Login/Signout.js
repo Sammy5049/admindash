@@ -1,9 +1,13 @@
+import { link } from "fs";
 
-const history = useHistory
+/*const history = useHistory();
 function Signout() {
     localStorage.clear()
-    history.push('./pages/Home')
+    history.push('../components/Login/Signin')
 }
 
 
-export default Signout
+<link to='/Signin'> Signout</link>
+
+export default Signout*/
+//You can see i comment out all of this and is still working, we dont need it then but I dont want to delet it. you can delet it sha
