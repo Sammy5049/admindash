@@ -100,7 +100,7 @@ function Dashboard() {
 
 
                     <img src={logout} alt="icon" />
-                    <p> Sign out</p>
+                  <p>  <Link to="/Signin" style={{color:"white" }}>Logout</Link></p>
                 </div>
 
             </div>

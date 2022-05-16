@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 // import { ToastContainer, toast } from "react-toastify";
 // import { Link } from "react-router-dom";
 
@@ -7,8 +8,7 @@ function Signin() {
     const [formValid, setFormValid] = useState(false)
     const [form, setForm] = useState({
         name: "",
-        email: ""
-
+        email: "",
     });
 
 
@@ -16,9 +16,8 @@ function Signin() {
         if (
             form.name !== "" &&
             form.email !== ""
-
-
-        ) {
+             )
+              {
             setFormValid(true)
         } else {
             setFormValid(false)
@@ -27,52 +26,51 @@ function Signin() {
 
 
 
-    const handleChange = (e) => {
-        setForm({
-            ...form,
-            [e.target.name]: e.target.value
-        })
-    }
+        const handleChange = (e) => {
+            setForm({
+                ...form,
+                [e.target.name]: e.target.value
+            });
+        };
 
-    const submitHandler = (e) => {
-        e.preventDefault()
-        sessionStorage.setItem('userDetails', JSON.stringify({ ...form }))
+        const submitHandler = (e) => {
+            e.preventDefault();
+            sessionStorage.setItem('userDetails', JSON.stringify({ ...form }));
 
-        window.location = "/"
-    }
+            window.location = "/";
+        };
 
 
 
-    return (
-        <div className="auth_signup">
-            {/* <ToastContainer /> */}
+        return (
+            <div className="auth_signup">
+                {/* <ToastContainer /> */}
 
-            <div>
-                <h1> Sign In</h1>
-                <form onSubmit={submitHandler}  >
+                <div>
+                    <h1> Login</h1>
+                    <form onSubmit={submitHandler}>
 
-                    <input type="text" placeholder=" Name" name="name" onChange={handleChange} />
-                    <p> {form.name} </p>
-                    <input type="email" required placeholder="Contact Email" name="email" onChange={handleChange} />
-                    <p> {form.email} </p>
-                    <div style={{ display: "flex", alignItems: "flex-start" }}>
-                        <input type="checkbox" style={{ width: "25px", margin: "-7px 7px 0 0" }} id="readTerms" />
-                        <p >I have read, understood and i agree to the terms and conditions</p>
-                    </div>
-                    <button
-                        className={formValid ? "auth_signup-active" : "auth_signup-submit"}
-                    // type="submit"
-                    // id="actionBtn"
-                    // disabled={!formValid}
-                    >
-                        Sign In
-                    </button>
+                        <input type="text" placeholder=" Name" name="name" onChange={handleChange} />
+                        <p> {form.name} </p>
+                        <input type="email" required placeholder="Contact Email" name="email" onChange={handleChange} />
+                        <p> {form.email} </p>
+                        <div style={{ display: "flex", alignItems: "flex-start" }}>
+                            <input type="checkbox" style={{ width: "25px", margin: "-7px 7px 0 0" }} id="readTerms" />
+                            <p>I have read, understood and i agree to the terms and conditions</p>
+                        </div>
+                        <Link to="/Client"> <button
+                            className={formValid ? "auth_signup-active" : "auth_signup-submit"}
+                        >
+                            Login 
 
-                </form>
+                        </button>
+                        </Link>
+
+                    </form>
+                </div>
+
             </div>
-
-        </div>
-    )
-}
+        );
+    }
 
 export default Signin;

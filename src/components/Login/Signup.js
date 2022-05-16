@@ -75,7 +75,7 @@ function Signup() {
                     // id="actionBtn"
                     // disabled={!formValid}
                     >
-                        Sign Up
+                        Sign Up 
                     </button>
 
                 </form>
