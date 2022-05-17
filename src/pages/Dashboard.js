@@ -8,6 +8,8 @@ import TeamMembers from "../components/Dashboard/TeamMembers/teamMembers";
 import profile from "../assets/svg/sidebar/profile.svg";
 import logout from "../assets/svg/sidebar/logout.svg";
 import menu from "../assets/svg/menu.svg";
+import './Dashboard.css'
+
 
 
 function Dashboard() {
@@ -100,7 +102,7 @@ function Dashboard() {
 
 
                     <img src={logout} alt="icon" />
-                  <p>  <Link to="/Signin" style={{color:"white" }}>Logout</Link></p>
+                  <p>  <Link to="/Signin" style={{color:"white" }} id='bol'>Logout</Link></p>
                 </div>
 
             </div>

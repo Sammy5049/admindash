@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import Signin from "./Signin";
+import './signin.css'
 // import { ToastContainer, toast } from "react-toastify";
 // import { Link } from "react-router-dom";
 
@@ -51,7 +53,7 @@ function Signup() {
         <div className="auth_signup">
             {/* <ToastContainer /> */}
 
-            <div>
+            <div className="guard">
                 <h1> Sign Up</h1>
                 <form onSubmit={submitHandler}  >
 

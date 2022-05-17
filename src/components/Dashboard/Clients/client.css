@@ -1,0 +1,47 @@
+.client-table {
+ margin: 20px;
+ background-color: #acb6e560;
+    border: 0.25px solid #0046E6;
+     box-sizing: border-box;
+     box-shadow: 6px 4px 38px 4px rgba(0, 0, 0, 0.02);
+     border-radius: 10px;
+     width: 90%;
+     padding: 15px 15px;
+     margin: 40px 3.2em;
+     text-align: left;
+} 
+
+.table {
+ padding: 20px 60px;
+ color: #252cb1;
+
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+
+  td {
+   border-bottom: 0.75px solid #B5B5B5;
+   color: #0F123F;
+   font-size: 1em;
+   text-align: left;
+   
+  }
+ 
+  th,
+  td {
+   padding: 20px  0px;
+   
+   
+  }
+ 
+  th {
+   font-weight: 400;
+   border-bottom: 0.75px solid #B5B5B5;
+  
+  }
+ 
+  table {
+   padding: 20px 10px;
+   text-align: center;
+  }

@@ -714,10 +714,15 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+          background-image: url(../components/Login/back.jpg);
+          
+          
 }
 
+
+
 .auth_signup h1 {
-  color: orange;
+  color: rgb(7, 145, 46);
 }
 
 .auth_signup input {
@@ -728,10 +733,11 @@ html {
   border: 2px solid #C4C4C4;
   border-radius: 5px;
   color: #8A8A8A;
+  
 }
 
 .auth_signup input:focus {
-  border: 2px solid orange;
+  border: 2px solid rgb(7, 145, 46);
   outline: none !important;
 }
 
@@ -772,10 +778,10 @@ html {
   margin: 30px 0;
   border-radius: 7px;
   border: 1px solid #D0D0D0;
-  background: #D0D0D0;
+  background: #fffbfb;
   font-size: 1.1em;
   font-weight: 600;
-  color: white;
+  color: rgb(25, 152, 9);
 }
 
 .auth_signup-active {
@@ -894,6 +900,7 @@ html {
   overflow-y: scroll;
 }
 
+
 @media (max-width: 992px) {
   .dashboard_sidebar {
     z-index: 3;
@@ -997,7 +1004,9 @@ html {
   padding: 10px 15px;
   margin-bottom: 20px;
   position: relative;
+  margin-top: 20px;
 }
+
 
 .dashboard_sidebar-items img {
   width: 20px;
@@ -1018,11 +1027,11 @@ html {
 }
 
 .dashboard_sidebar-items:hover {
-  background-color: orange;
+  background-color: rgba(224, 151, 151, 0.601);
 }
 
 .dashboard_sidebar .active {
-  background-color: orange;
+  background-color: rgba(224, 151, 151, 0.601);
 }
 
 .dashboard_sidebar .logout {
