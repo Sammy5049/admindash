@@ -1,8 +1,7 @@
 import { Container } from "react-bootstrap";
-import { Routes, Route, Navigate, useLocation, Link, useHistory } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Clients from "../components/Dashboard/Clients/clients";
-import Notes from "../components/Dashboard/Notes/notes";
 import Products from "../components/Dashboard/Products/products";
 import TeamMembers from "../components/Dashboard/TeamMembers/teamMembers";
 import profile from "../assets/svg/sidebar/profile.svg";
@@ -49,17 +48,7 @@ function Dashboard() {
 
                 <div className="dashboard_sidebar-main"></div>
 
-                <Link className="link-decor" to="/ notes">
-                    <div
-                        className={path.includes("notes") || path === "notes"
-                            ? "dashboard_sidebar-items active"
-                            : "dashboard_sidebar-items"}
-                        onClick={() => changePathAndClose("notes")}
-                    >
-                        <img src={profile} alt="icon" />
-                        <p> NOTES </p>
-                    </div>
-                </Link>
+
                 <Link className="link-decor" to="/clients">
                     <div
                         className={path.includes("clients") || path === "clients"
@@ -102,7 +91,7 @@ function Dashboard() {
 
 
                     <img src={logout} alt="icon" />
-                  <p>  <Link to="/Signin" style={{color:"white" }} id='bol'>Logout</Link></p>
+                    <p>  <Link to="/Signin" style={{ color: "white" }} id='bol'>Logout</Link></p>
                 </div>
 
             </div>
@@ -134,8 +123,7 @@ function Dashboard() {
                 </Container>
                 <div>
                     <Routes>
-                        <Route path="/" element={<Navigate to="/home" />} />
-                        <Route path="/notes" element={<Notes />} />
+                        <Route path="/" element={<Navigate to="/clients" />} />
                         <Route path="/clients" element={<Clients />} />
                         <Route path="/products/*" element={<Products />} />
                         <Route path="/teamMembers/*" element={<TeamMembers />} />
