@@ -36,7 +36,7 @@ const Clients = () => {
                             
                              <th  className='table'>  name</th>
                              <th  className='table'> email </th>
-                             <th  className='table'> vat</th>
+                             <th  className='table'> Vat</th>
                               <th  className='table'>phone</th>
                              <th  className='table'> country  </th>
                          </tr>
