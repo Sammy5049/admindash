@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Signin from "./Signin";
+
 import './signin.css'
 // import { ToastContainer, toast } from "react-toastify";
 // import { Link } from "react-router-dom";
@@ -77,7 +77,7 @@ function Signup() {
                     // id="actionBtn"
                     // disabled={!formValid}
                     >
-                        Sign Up 
+                        Sign Up
                     </button>
 
                 </form>
