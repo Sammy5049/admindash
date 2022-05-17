@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-
+import { Link } from 'react-router-dom';
 import './signin.css'
 // import { ToastContainer, toast } from "react-toastify";
 // import { Link } from "react-router-dom";
-
 function Signup() {
 
     const [formValid, setFormValid] = useState(false)
@@ -69,8 +68,23 @@ function Signup() {
                     <p> {form.phoneNumber} </p>
                     <div style={{ display: "flex", alignItems: "flex-start" }}>
                         <input type="checkbox" style={{ width: "25px", margin: "-7px 7px 0 0" }} id="readTerms" />
-                        <p >I have read, understood and i agree to the terms and conditions</p>
+                        <p >I have read, and I agree to the terms and conditions</p>
                     </div>
+                    <br></br>
+                    <div >
+                        Alreadly have an account?
+
+                        <Link to="/Signin"> <button className="Button"> Sign In</button> </Link>
+
+                    </div>
+                    <br></br>
+                    <p> New to our services? Check
+
+                        <Link to="/Home"> <button className="Button"> Home</button> </Link> for more information
+
+                    </p>
+
+
                     <button
                         className={formValid ? "auth_signup-active" : "auth_signup-submit"}
                     // type="submit"
