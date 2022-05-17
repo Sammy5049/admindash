@@ -47,11 +47,11 @@ html {
 }
 
 .home-content-text button {
-  background: orange;
+  background: #0046E6;;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
-  border: 1px solid orange;
+  border: 1px solid #0046E6;;
   font-size: 20px;
   font-weight: 500;
 }
@@ -170,7 +170,7 @@ html {
 }
 
 .home_main-boxes-1 {
-  border: 1px solid orange;
+  border: 1px solid #0046E6;;
   padding: 20px;
   border-radius: 10px;
   margin: 40px 0px 0;
@@ -184,7 +184,7 @@ html {
   position: absolute;
   bottom: 40px;
   left: calc(50% - 75px);
-  border: 1px solid orange;
+  border: 1px solid #0046E6;;
   border-radius: 8px;
   background-color: transparent;
   padding: 8px 15px;
@@ -198,14 +198,14 @@ html {
 }
 
 .home_main-boxes-2 {
-  border: 1px solid orange;
+  border: 1px solid #0046E6;;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   min-height: 340px;
   color: white;
   position: relative;
-  background-color: orange;
+  background-color: #0046E6;;
 }
 
 @media (max-width: 1200px) {
@@ -220,7 +220,7 @@ html {
   height: 17.51px;
   font-size: 7.76972px;
   color: #fff;
-  background: #FFC702;
+  background: #0046E6;;
   border-radius: 3.72549px;
   text-align: center;
   display: -webkit-box;
@@ -260,11 +260,11 @@ html {
 }
 
 .home_main-wallet {
-  border: 1px solid orange;
+  border: 1px solid #0046E6;;
   padding: 20px;
   border-radius: 10px;
   color: white;
-  background-color: orange;
+  background-color: #0046E6;;
   max-width: 400px;
 }
 
@@ -340,8 +340,8 @@ html {
 .home_wallet-section1-fund {
   padding: 10px 20px;
   margin: 20px 0;
-  background: orange;
-  border: 1px solid orange;
+  background: #0046E6;;
+  border: 1px solid #0046E6;;
   border-radius: 6px;
   color: white;
 }
@@ -473,8 +473,8 @@ html {
   margin: 20px 0 50px;
   padding: 10px 20px;
   width: 100%;
-  background: orange;
-  border: 1px solid orange;
+  background: #0046E6;;
+  border: 1px solid #0046E6;;
   border-radius: 6px;
   color: white;
 }
@@ -527,11 +527,11 @@ html {
 }
 
 .navbar-signins button {
-  background: orange;
+  background: #0046E6;;
   color: white;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid orange;
+  border: 1px solid #0046E6;;
   margin-left: 10px;
 }
 
@@ -647,9 +647,9 @@ html {
 
 .settings_members-table-top-btn button {
   height: 30px;
-  border: 1px solid orange;
+  border: 1px solid #0046E6;;
   color: white;
-  background: orange;
+  background: #0046E6;;
   width: 200px;
   padding: 0px 15px;
   font-size: 0.9em;
@@ -790,8 +790,8 @@ html {
   text-align: center;
   margin: 30px 0;
   border-radius: 7px;
-  border: 1px solid orange;
-  background: orange;
+  border: 1px solid #0046E6;;
+  background: #0046E6;;
   font-size: 1.1em;
   font-weight: 600;
   color: white;
@@ -862,7 +862,7 @@ html {
 }
 
 .auth_otp input:focus {
-  border: 2px solid orange;
+  border: 2px solid #0046E6;;
   outline: none !important;
 }
 
@@ -882,7 +882,7 @@ html {
 }
 
 .auth_otp-text1 span {
-  color: orange;
+  color: #0046E6;;
   cursor: pointer;
 }
 
@@ -895,7 +895,7 @@ html {
   z-index: 3;
   left: 0;
   overflow-y: scroll;
-  background-color: orange;
+  background-color: #0046E6;;
   color: white;
   overflow-y: scroll;
 }
@@ -1019,7 +1019,7 @@ html {
 }
 
 .dashboard_sidebar-items span {
-  color: #FFC702;
+  color: #0046E6;;
   font-size: 0.65em;
   position: absolute;
   bottom: 0;
