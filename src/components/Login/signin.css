@@ -1,6 +1,17 @@
 .guard {
- background-color: #a5cc829d;
- border: 2px solid #2b32b2;
- border-radius: 10px;
- padding: 60px 40px;
+    background-color: #a5cc829d;
+    border: 2px solid #2b32b2;
+    border-radius: 10px;
+    padding: 60px 40px;
+}
+
+.Button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
 }

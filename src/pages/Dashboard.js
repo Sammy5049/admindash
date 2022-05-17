@@ -108,7 +108,6 @@ function Dashboard() {
                                     : path.includes("clients") ? "Clients"
                                         : path.includes("products") ? "Products"
                                             : path.includes("teamMembers") ? "teamMembers"
-
                                                 : path.includes("apis") ? "APIs"
                                                     : "Your Notes"
                             }
