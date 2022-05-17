@@ -1,0 +1,13 @@
+#sidebar {
+ padding-top: 4em;
+ background-color: #2b32b2;
+}
+ .dashboard {
+  margin-top: 5em;
+ }
+
+ #bol {
+  text-decoration: none;
+  font-size: 0.8em
+ }
+ 
