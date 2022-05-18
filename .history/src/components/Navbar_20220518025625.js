@@ -1,18 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Navbar.css'
-
+import '../scss/component/_navbar.scss'
 
 const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='navbar-header'>
-                <h1> InterBooks </h1>
+                <h1> Libraree </h1>
 
 
                 <ul className='ul-light'>
                     {/* <ul className={ toggle === false ? 'ul-light' : 'ul-dark'}> */}
-                    <li>  Home </li>
+                    <li>  Overview  </li>
                     <li>  About Us  </li>
                     <li> Our Product  </li>
                     <li>  Contact Us  </li>

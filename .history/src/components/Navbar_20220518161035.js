@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='navbar-header'>
-                <h1> InterBooks </h1>
+                <h1> Libraree </h1>
 
 
                 <ul className='ul-light'>

@@ -1,0 +1,29 @@
+.home{
+    background-image: url(../assets/home/bookshelf.jpg);
+    background-size: cover;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: -1em;
+}
+
+.home-content-image{
+    background-color: currentColor;
+}
+
+.i-button{
+    width: 8rem;
+    height: 3rem;
+}
+
+.i-button>:hover{
+    cursor: pointer;
+}
+
+.s-button>*:hover{
+    cursor: pointer;
+}
+
+.s-button{
+    width: 8rem;
+    height: 3rem;
+}
