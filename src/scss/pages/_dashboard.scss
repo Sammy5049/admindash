@@ -23,6 +23,7 @@
             top: 20px;
             right: 20px;
             width: 35px;
+            
             @media(min-width: $tab-land){
                 display: none;
             }
@@ -176,6 +177,7 @@
                 position: absolute;
                 top: 10px;
                 left: 15px;
+               
                 @media(min-width: $tab-land){
                     display: none;
                 }
