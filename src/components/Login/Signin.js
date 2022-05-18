@@ -51,20 +51,30 @@ function Signin() {
                 <form onSubmit={submitHandler}>
 
                     <input type="text" placeholder=" Name" name="name" onChange={handleChange} />
-                    <p> {form.name} </p>
+
                     <input type="email" required placeholder="Contact Email" name="email" onChange={handleChange} />
-                    <p> {form.email} </p>
+
                     <div style={{ display: "flex", alignItems: "flex-start" }}>
                         <input type="checkbox" style={{ width: "25px", margin: "-7px 7px 0 0" }} id="readTerms" />
                         <p> Remember password ?</p>
                     </div>
-                    <Link to="/Client"> <button
+                    <Link to='/clients' > <button
                         className={formValid ? "auth_signup-active" : "auth_signup-submit"}
                     >
                         Login
 
                     </button>
                     </Link>
+
+                    <div className="que">
+
+                        <div><Link className="already" to="#"> <p> Forgot password? </p></Link> </div>
+                        <div> <Link className="already" to="/signup"> <p> New User?Register  </p></Link>
+
+                        </div>
+                    </div>
+                    <div className="powered"><p>powered by group 40</p></div>
+
 
                 </form>
             </div>
