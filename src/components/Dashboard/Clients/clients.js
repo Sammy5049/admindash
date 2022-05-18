@@ -31,7 +31,7 @@ const Clients = () => {
             <div className='client-table'>
                 <div className='client-table_main'>
            <table >
-                     <thead className='head'>
+                     <thead>
                          <tr>
                             
                              <th  className='table'>  name</th>

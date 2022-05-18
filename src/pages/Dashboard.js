@@ -1,7 +1,5 @@
 import { Container } from "react-bootstrap";
 import { Routes, Route, Navigate, useLocation, Link } from "react-router-dom";
-import {AiOutlineTeam} from "react-icons/ai";
-import {FaDatabase, FaUsers} from "react-icons/fa"
 import { useEffect, useState } from "react";
 import Clients from "../components/Dashboard/Clients/clients";
 import Products from "../components/Dashboard/Products/products";
@@ -58,7 +56,7 @@ function Dashboard() {
                             : "dashboard_sidebar-items"}
                         onClick={() => changePathAndClose("clients")}
                     >
-                        <FaUsers className="team" />
+                        <img src={profile} alt="icon" />
                         <p> Clients</p>
                     </div>
                 </Link>
@@ -69,7 +67,7 @@ function Dashboard() {
                             : "dashboard_sidebar-items"}
                         onClick={() => changePathAndClose("products")}
                     >
-                        <FaDatabase className="team" />
+                        <img src={profile} alt="icon" />
                         <p>Products</p>
                     </div>
                 </Link>
@@ -80,7 +78,7 @@ function Dashboard() {
                             : "dashboard_sidebar-items"}
                         onClick={() => changePathAndClose("teamMembers")}
                     >
-                        <AiOutlineTeam className="team" />
+                        <img src={profile} alt="icon" />
                         <p>Team Members</p>
                     </div>
                 </Link>
@@ -111,7 +109,7 @@ function Dashboard() {
                                         : path.includes("products") ? "Products"
                                             : path.includes("teamMembers") ? "teamMembers"
                                                 : path.includes("apis") ? "APIs"
-                                                    : <p className="wel">Welcome to your dashboard! <span>Click the side bar links to access other features</span></p>
+                                                    : "Your Notes"
                             }
 
                         </h4>

@@ -688,7 +688,7 @@ html {
 }
 
 .settings_members-table table th {
-  
+  opacity: 0.56;
   font-weight: 400;
   text-transform: capitalize !important;
 }

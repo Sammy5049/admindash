@@ -27,14 +27,13 @@ const Products = () => {
         <div className='products-card-image'>
             <img src= {product.image} alt='icon' />
         </div>
-        <div className='product-card-details'>
+        <div>
             <h3>{product.name}</h3>
             <p>
-               Net price: {product.net_price}
+                {product.description}
             </p>
 
-            <span><p>Tax:{product.taxes}</p></span>
-             <span><p>Price:{product.price}</p></span>
+            <span><p>{product.upc}</p></span>
             
         </div>
         

@@ -1,0 +1,26 @@
+.navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-header{
+    flex: 1;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 2rem;
+    color:blue
+}
+
+.ul-light>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+.ul-light> ul:hover{
+    color: var(--blue);
+    cursor: pointer;
+}

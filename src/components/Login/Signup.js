@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import './signup.css'
+import './signin.css'
 // import { ToastContainer, toast } from "react-toastify";
 // import { Link } from "react-router-dom";
 function Signup() {
@@ -52,24 +52,38 @@ function Signup() {
         <div className="auth_signup">
             {/* <ToastContainer /> */}
 
-            <div className="guard-up">
+            <div className="guard">
                 <h1> Sign Up</h1>
                 <form onSubmit={submitHandler}  >
 
                     <input type="text" placeholder=" Name" name="name" onChange={handleChange} />
-
+                    <p> {form.name} </p>
                     <input type="text" placeholder=" Country" name="country" onChange={handleChange} />
-
+                    <p> {form.country} </p>
                     <input type="text" required placeholder="Address" name="address" onChange={handleChange} />
-
+                    <p> {form.address} </p>
                     <input type="email" required placeholder="Contact Email" name="email" onChange={handleChange} />
-
+                    <p> {form.email} </p>
                     <input type="text" required placeholder="Phone Number" name="phoneNumber" onChange={handleChange} />
-
+                    <p> {form.phoneNumber} </p>
                     <div style={{ display: "flex", alignItems: "flex-start" }}>
                         <input type="checkbox" style={{ width: "25px", margin: "-7px 7px 0 0" }} id="readTerms" />
                         <p >I have read, and I agree to the terms and conditions</p>
                     </div>
+                    <br></br>
+                    <div >
+                        Alreadly have an account?
+
+                        <Link to="/Signin"> <button className="Button"> Sign In</button> </Link>
+
+                    </div>
+                    <br></br>
+                    <p> New to our services? Check
+
+                        <Link to="/Home"> <button className="Button"> Home</button> </Link> for more information
+
+                    </p>
+
 
                     <button
                         className={formValid ? "auth_signup-active" : "auth_signup-submit"}
@@ -79,23 +93,6 @@ function Signup() {
                     >
                         Sign Up
                     </button>
-
-
-                    <div className="ask"  >
-                        <div className="mid"><p> Already have an account?
-
-                            <Link className="already" to="/Signin"> <button className="Button2"> Sign In</button> </Link></p></div>
-
-                        <div className="mid"> <p>  New to our services? Check
-
-                            <Link className="already" to="/Home"> <button className="Button2"> Home</button> </Link> for more information
-                        </p></div>
-
-
-                    </div>
-
-
-
 
                 </form>
             </div>
