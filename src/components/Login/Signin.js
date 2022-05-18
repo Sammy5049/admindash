@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
+import { Navigate, Link } from 'react-router-dom';
 import './signin.css'
 // import { ToastContainer, toast } from "react-toastify";
 // import { Link } from "react-router-dom";
@@ -51,30 +51,30 @@ function Signin() {
                 <form onSubmit={submitHandler}>
 
                     <input type="text" placeholder=" Name" name="name" onChange={handleChange} />
-                  
+
                     <input type="email" required placeholder="Contact Email" name="email" onChange={handleChange} />
-                    
+
                     <div style={{ display: "flex", alignItems: "flex-start" }}>
                         <input type="checkbox" style={{ width: "25px", margin: "-7px 7px 0 0" }} id="readTerms" />
                         <p> Remember password ?</p>
                     </div>
-                    <Link to="/Client"> <button
+                    <Link Navigate to='/clients' > <button
                         className={formValid ? "auth_signup-active" : "auth_signup-submit"}
                     >
                         Login
 
                     </button>
                     </Link>
-                    
-                    <div className="que">
-                    
-                            <div><Link className="already" to="#"> <p> Forgot password? </p></Link> </div>
-                            <div> <Link className="already" to="/signup"> <p> New User?Register  </p></Link> 
 
+                    <div className="que">
+
+                        <div><Link className="already" to="#"> <p> Forgot password? </p></Link> </div>
+                        <div> <Link className="already" to="/signup"> <p> New User?Register  </p></Link>
+
+                        </div>
                     </div>
-                    </div>
-                     <div className="powered"><p>powered by group 40</p></div>
-               
+                    <div className="powered"><p>powered by group 40</p></div>
+
 
                 </form>
             </div>
