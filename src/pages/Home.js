@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Book from "../assets/home/images.jpeg"
+import Book from "../assets/home/images.png"
 import { Link } from 'react-router-dom'
+import './Home.css'
 
 const Home = () => {
     // const [count, setCount] = useState(10)
@@ -16,13 +17,13 @@ const Home = () => {
 
             <div className='home-content'>
                 <div className='home-content-text'>
-                    <h1> Join the fastest growing community of traders</h1>
-                    <p> Capstone is a platform where you get access to quality analysis,
-                        join a community of online traders, get the latest information on big moves in the market.</p>
+                    <h1> Join InterBooks</h1>
+                    <p> InterBooks is a platform where you get access to quality books online including PDFs and audio books
+                        join a community of online readers, get the latest information on new books of interest.</p>
 
-                    <Link to="/Signup"> <button> Get started for free</button> </Link>
-                    <p>Alreadly have an account?, Sign in</p>
-                    <Link to="/Signin"> <button> Sign in</button> </Link>
+                    <Link to="../components/Login/Signup.js"> <button className='button i-button'> Click to get started</button> </Link>
+                    <p>Already have an account? Sign in</p>
+                    <Link to="../components/Login/Signin.js"> <button className='button s-button'> Sign in</button> </Link>
 
 
 
