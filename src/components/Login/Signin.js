@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Navigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './signin.css'
 // import { ToastContainer, toast } from "react-toastify";
 // import { Link } from "react-router-dom";
@@ -58,7 +58,7 @@ function Signin() {
                         <input type="checkbox" style={{ width: "25px", margin: "-7px 7px 0 0" }} id="readTerms" />
                         <p> Remember password ?</p>
                     </div>
-                    <Link Navigate to='/clients' > <button
+                    <Link to='/clients' > <button
                         className={formValid ? "auth_signup-active" : "auth_signup-submit"}
                     >
                         Login
