@@ -1,17 +1,39 @@
 .guard {
-    background-color: #a5cc829d;
+    background-color: #fdfdfd84;
     border: 2px solid #2b32b2;
     border-radius: 10px;
-    padding: 60px 40px;
+    padding: 4.5em 2.2em;
 }
 
-.Button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 30px;
+button {
+    cursor: pointer;
+}
+.que {
+    display: flex;
+    
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
+   
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    
+}
+
+.que p {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+ 
+.powered {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 5em;
+    margin-bottom: -3em;
+}
+
+.powered p {
+
+    color: rgb(4, 4, 4);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    opacity: 0.3;
 }
