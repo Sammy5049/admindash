@@ -1,5 +1,7 @@
 import { Container } from "react-bootstrap";
 import { Routes, Route, Navigate, useLocation, Link } from "react-router-dom";
+import {AiOutlineTeam} from "react-icons/ai";
+import {FaDatabase, FaUsers} from "react-icons/fa"
 import { useEffect, useState } from "react";
 import Clients from "../components/Dashboard/Clients/clients";
 import Products from "../components/Dashboard/Products/products";
@@ -56,7 +58,7 @@ function Dashboard() {
                             : "dashboard_sidebar-items"}
                         onClick={() => changePathAndClose("clients")}
                     >
-                        <img src={profile} alt="icon" />
+                        <FaUsers className="team" />
                         <p> Clients</p>
                     </div>
                 </Link>
@@ -67,7 +69,7 @@ function Dashboard() {
                             : "dashboard_sidebar-items"}
                         onClick={() => changePathAndClose("products")}
                     >
-                        <img src={profile} alt="icon" />
+                        <FaDatabase className="team" />
                         <p>Products</p>
                     </div>
                 </Link>
@@ -78,7 +80,7 @@ function Dashboard() {
                             : "dashboard_sidebar-items"}
                         onClick={() => changePathAndClose("teamMembers")}
                     >
-                        <img src={profile} alt="icon" />
+                        <AiOutlineTeam className="team" />
                         <p>Team Members</p>
                     </div>
                 </Link>
@@ -109,7 +111,7 @@ function Dashboard() {
                                         : path.includes("products") ? "Products"
                                             : path.includes("teamMembers") ? "teamMembers"
                                                 : path.includes("apis") ? "APIs"
-                                                    : "Your Notes"
+                                                    : <p className="wel">Welcome to your dashboard! <span>Click the side bar links to access other features</span></p>
                             }
 
                         </h4>
