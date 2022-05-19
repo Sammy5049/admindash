@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Book from "../assets/home/images.png"
+import cic from './cic.jpeg'
 import { Link } from 'react-router-dom'
-import './Home.css'
+import './home.css'
+import Navbarr from '../components/Navbarr'
+
 
 const Home = () => {
     // const [count, setCount] = useState(10)
@@ -12,6 +14,7 @@ const Home = () => {
 
 
         <div className='home'>
+            <Navbarr />
 
             <Navbar />
 
@@ -21,16 +24,17 @@ const Home = () => {
                     <p> InterBooks is a platform where you get access to quality books online including PDFs and audio books
                         join a community of online readers, get the latest information on new books of interest.</p>
 
-                    <Link to="../components/Login/Signup.js"> <button className='button i-button'> Click to get started</button> </Link>
+                    <Link to="/signup"> <button className='button i-button'> Click to get started</button> </Link>
                     <p>Already have an account? Sign in</p>
-                    <Link to="../components/Login/Signin.js"> <button className='button s-button'> Sign in</button> </Link>
+                    <Link to="/signin"> <button className='button s-button'> Sign in</button> </Link>
+
 
 
 
                 </div>
 
                 <div className='home-content-image'>
-                    <img src={Book} alt="icon" />
+                    <img src={cic} alt="icon" />
                 </div>
 
 

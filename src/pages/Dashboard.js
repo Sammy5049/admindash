@@ -102,6 +102,15 @@ function Dashboard() {
 
                 <hr />
 
+                       <div className="dashboard_sidebar-items logout"  id="landpage" //onClick={logOut}
+                >
+
+
+                    <img src={logout} alt="icon" />
+                    <p>  <Link to="/Home" style={{ color: "white" }} id='bol'>Go to Home</Link></p>
+                </div>
+
+                        
 
                 <div className="dashboard_sidebar-items logout" //onClick={logOut}
                 >

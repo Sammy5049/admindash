@@ -39,6 +39,7 @@ html {
   font-size: 4.5em;
   line-height: 0.9em;
   font-weight: 900;
+  color: #d62828;
 }
 
 .home-content-text p {
@@ -47,7 +48,7 @@ html {
 }
 
 .home-content-text button {
-  background: #0046E6;;
+  background: #06038d;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -220,7 +221,7 @@ html {
   height: 17.51px;
   font-size: 7.76972px;
   color: #fff;
-  background: #0046E6;;
+  background: #ffffff;;
   border-radius: 3.72549px;
   text-align: center;
   display: -webkit-box;
@@ -527,7 +528,7 @@ html {
 }
 
 .navbar-signins button {
-  background: #0046E6;;
+  background: #06038d;
   color: white;
   padding: 10px;
   border-radius: 5px;
