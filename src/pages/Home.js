@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import './home.css'
 import Navbarr from '../components/Navbarr'
 
+
 const Home = () => {
     // const [count, setCount] = useState(10)
 
@@ -26,6 +27,7 @@ const Home = () => {
                     <Link to="/signup"> <button className='button i-button'> Click to get started</button> </Link>
                     <p>Already have an account? Sign in</p>
                     <Link to="/signin"> <button className='button s-button'> Sign in</button> </Link>
+
 
 
 
