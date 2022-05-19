@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Book from "../assets/home/images.jpeg"
+import cic from './cic.jpeg'
 import { Link } from 'react-router-dom'
+import './home.css'
+import Navbarr from '../components/Navbarr'
 
 const Home = () => {
     // const [count, setCount] = useState(10)
@@ -11,25 +13,26 @@ const Home = () => {
 
 
         <div className='home'>
+            <Navbarr />
 
             <Navbar />
 
             <div className='home-content'>
                 <div className='home-content-text'>
-                    <h1> Join the fastest growing community of traders</h1>
-                    <p> Capstone is a platform where you get access to quality analysis,
-                        join a community of online traders, get the latest information on big moves in the market.</p>
+                    <h1> Join InterBooks</h1>
+                    <p> InterBooks is a platform where you get access to quality books online including PDFs and audio books
+                        join a community of online readers, get the latest information on new books of interest.</p>
 
-                    <Link to="/Signup"> <button> Get started for free</button> </Link>
-                    <p>Alreadly have an account?, Sign in</p>
-                    <Link to="/Signin"> <button> Sign in</button> </Link>
+                    <Link to="/signup"> <button className='button i-button'> Click to get started</button> </Link>
+                    <p>Already have an account? Sign in</p>
+                    <Link to="/signin"> <button className='button s-button'> Sign in</button> </Link>
 
 
 
                 </div>
 
                 <div className='home-content-image'>
-                    <img src={Book} alt="icon" />
+                    <img src={cic} alt="icon" />
                 </div>
 
 
