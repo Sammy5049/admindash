@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import { Routes, Route, Navigate, useLocation, Link } from "react-router-dom";
 import {AiOutlineTeam} from "react-icons/ai";
-import {FaDatabase, FaUsers} from "react-icons/fa"
+import {FaDatabase, FaHome, FaUsers} from "react-icons/fa"
 import { useEffect, useState } from "react";
 import Clients from "../components/Dashboard/Clients/clients";
 import Products from "../components/Dashboard/Products/products";
@@ -10,6 +10,7 @@ import profile from "../assets/svg/sidebar/profile.svg";
 import logout from "../assets/svg/sidebar/logout.svg";
 import menu from "../assets/svg/menu.svg";
 import './Dashboard.css'
+import Homepage from "../components/Dashboard/Homepage/Homepage";
 
 
 
@@ -49,6 +50,20 @@ function Dashboard() {
                 <h3> Welcome {userDetails.name} </h3>
 
                 <div className="dashboard_sidebar-main"></div>
+
+
+
+                 <Link className="link-decor" to="/Homepage">
+                    <div
+                        className={path.includes("Homepage") || path === "Homepage"
+                            ? "dashboard_sidebar-items active"
+                            : "dashboard_sidebar-items"}
+                        onClick={() => changePathAndClose("Homepage")}
+                    >
+                        <FaHome className="team" />
+                        <p> Dashboard</p>
+                    </div>
+                </Link>
 
 
                 <Link className="link-decor" to="/clients">
@@ -106,7 +121,7 @@ function Dashboard() {
                             //onClick={goToBoard} 
                             style={{ cursor: "pointer" }}>
                             {
-                                path.includes("notes") ? "Your  Notes"
+                                path.includes("Homepage") ? "Dashboard"
                                     : path.includes("clients") ? "Clients"
                                         : path.includes("products") ? "Products"
                                             : path.includes("teamMembers") ? "teamMembers"
@@ -124,10 +139,12 @@ function Dashboard() {
                 </Container>
                 <div>
                     <Routes>
-                        <Route path="/" element={<Navigate to="/clients" />} />
+                        <Route path="/" element={<Navigate to="/Homepage" />} />
                         <Route path="/clients" element={<Clients />} />
                         <Route path="/products/*" element={<Products />} />
                         <Route path="/teamMembers/*" element={<TeamMembers />} />
+                        
+                        <Route path="/Homepage/*" element={<Homepage />} />
 
 
                     </Routes>

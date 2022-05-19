@@ -58,7 +58,7 @@ function Signin() {
                         <input type="checkbox" style={{ width: "25px", margin: "-7px 7px 0 0" }} id="readTerms" />
                         <p> Remember password ?</p>
                     </div>
-                    <Link to='/clients' > <button
+                    <Link to='/' > <button
                         className={formValid ? "auth_signup-active" : "auth_signup-submit"}
                     >
                         Login
