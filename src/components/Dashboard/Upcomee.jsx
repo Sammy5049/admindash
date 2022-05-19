@@ -4,6 +4,7 @@ import { MdOutlineCancel} from "react-icons/md"
 import { ImLocation} from "react-icons/im"
 
 import './upcoming.css'
+import { Link } from 'react-router-dom'
 
 const Upcomee = () => {
   return (
@@ -36,10 +37,11 @@ const Upcomee = () => {
           </div>
 
           <div className="iconn">
-            <div className="con"><FaFileSignature /></div>
+     <div className="con">
+             
+             <Link to="#"><FaFileSignature /></Link></div>
         
-                <MdOutlineCancel />
-
+        <Link to="#"><MdOutlineCancel /></Link>
           </div>
 
 
